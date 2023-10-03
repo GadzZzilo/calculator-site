@@ -5,23 +5,24 @@ from sympy import Symbol, integrate
 #logic
 
 
-def indefinite_integral(given):
-    var = Symbol('x')
-    res = str(integrate(given, var)) + ' + C'
+def indefinite_integral(given, var):
+    sym = Symbol(str(var))
+    res = str(integrate(given, sym)) + ' + C'
     if 'log' in res:
         res = res.replace('log', 'ln')
     return res
 #########################
 
 
-def home(request):
+def compute_integral(request):
     context = {}
     if request.method == 'POST':
         data = request.POST['given']
+        context['given'] = data
 
         if 'btn1' in request.POST:
-            res = indefinite_integral(data)
+            var = request.POST['var']
+            res = indefinite_integral(data, var)
             context['result'] = res
-            return render(request, 'index.html', context)
-    return render(request, 'index.html')
-
+            return render(request, 'base.html', context)
+    return render(request, 'base.html')
