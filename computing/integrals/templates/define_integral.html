@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+<div class="container my-5">
+    <div class="row my-5">
+        <div class="col-md-4 offset-md-8">
+            <form method="post">
+                <select class="form-select" aria-label="Пример выбора по умолчанию">
+                    <option selected>Неопределенный интеграл</option>
+                    <option value="1">Определенный интеграл</option>
+                    <option value="2">Двойной интеграл</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                {% csrf_token %}
+                <div class="input-group input-group-lg">
+                    <iconify-icon icon="tabler:math-integral" width="60"></iconify-icon>
+
+                    <input type="text" name="given" class="form-control" placeholder="Выражение" aria-label="Выражение"
+                           aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2" name="btn1">=</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col my-5">
+            <p class="fs-3 fw-light">Ответ:</p>
+            <p class="fs-3"><strong>{{ result }}</strong></p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>
