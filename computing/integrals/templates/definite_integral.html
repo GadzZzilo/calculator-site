@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block type_select %}
+<div class="row my-5">
+    <div class="col-md-4 offset-md-8">
+            <ul>
+                <li><a href="{% url 'definite_integral' %}">Определенный интеграл</a></li>
+                <li><a href="{% url 'indefinite_integral' %}">Неопределенный интеграл</a></li>
+            </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block left_side %}
+<div class="col-1">
+    <div class="row">
+        <div class="col">
+            <div class="input-group input-group-lg">
+                <div class="input-group input-group-sm mb-3 ">
+                    <input type="text" name="up_lim" class="form-control" aria-label="Пример размера поля ввода"
+                           aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <iconify-icon icon="tabler:math-integral" width="60"></iconify-icon>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <input type="text" name="low_lim" class="form-control" aria-label="Пример размера поля ввода"
+                       aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
