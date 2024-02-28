@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="75786abf-89bb-4cac-82e6-87d25d6975ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computing/integrals/static/js/keyboard.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/computing/integrals/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computing/integrals/templates/definite_integral.html" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/templates/definite_integral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/indefinite_integral.html" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/templates/indefinite_integral.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computing/integrals/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

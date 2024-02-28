@@ -18,7 +18,7 @@
             <div class="input-group input-group-lg">
                 <div class="input-group input-group-sm mb-3 ">
                     <input type="text" name="up_lim" class="form-control" aria-label="Пример размера поля ввода"
-                           aria-describedby="inputGroup-sizing-sm">
+                           aria-describedby="inputGroup-sizing-sm" id="inputField_2" placeholder="+∞">
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="col">
             <div class="input-group input-group-sm mb-3">
                 <input type="text" name="low_lim" class="form-control" aria-label="Пример размера поля ввода"
-                       aria-describedby="inputGroup-sizing-sm">
+                       aria-describedby="inputGroup-sizing-sm" id="inputField_3" placeholder="-∞">
             </div>
         </div>
     </div>
@@ -42,8 +42,12 @@
 {% block plot %}
 <div class="row">
     <div class="col my-5">
-        <p class="fs-3 fw-light">График:</p>
-        <img src="data:image/png;base64,{{ plot }}"/>
+        {% if plot %}
+            <p class="fs-3 fw-light">График:</p>
+            <img src="data:image/png;base64,{{ plot }}"/>
+        {% else %}
+            <p class="fs-3 fw-light">Не удалось построить график :(</p>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

@@ -11,7 +11,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
         function addChar(char) {
-            document.getElementById("inputField").value += char;
+            document.getElementById("inputField_1").value += char;
         }
     </script>
 </head>
@@ -32,7 +32,7 @@
                             <input type="text" name="given" class="form-control" placeholder="Выражение"
                                    aria-label="Выражение"
                                    aria-describedby="button-addon2"
-                                    id="inputField">
+                                   id="inputField_1">
                         </div>
                     </div>
                     <div class="col-2 px-3">
@@ -66,9 +66,17 @@
     </div>
     <div class="row">
         <div class="col my-5">
-            <button onclick="addChar('F')" type="button" class="btn btn-outline-primary">P</button>
-            <button onclick="addChar('F')" type="button" class="btn btn-outline-primary">P</button>
-            <button onclick="addChar('F')" type="button" class="btn btn-outline-primary">P</button>
+            <button onclick="addChar('sin(')" type="button" class="btn btn-outline-primary">sin</button>
+            <button onclick="addChar('cos(')" type="button" class="btn btn-outline-primary">cos</button>
+            <button onclick="addChar('tan(')" type="button" class="btn btn-outline-primary">tg</button>
+            <button onclick="addChar('cot(')" type="button" class="btn btn-outline-primary">ctg</button>
+            <button onclick="addChar('asin(')" type="button" class="btn btn-outline-primary">asin</button>
+            <button onclick="addChar('acos(')" type="button" class="btn btn-outline-primary">acos</button>
+            <button onclick="addChar('atan(')" type="button" class="btn btn-outline-primary">atan</button>
+            <button onclick="addChar('acot(')" type="button" class="btn btn-outline-primary">acot</button>
+            <button onclick="addChar('pi')" type="button" class="btn btn-outline-primary">π</button>
+            <button onclick="addChar('exp(')" type="button" class="btn btn-outline-primary">e</button>
+            <button onclick="addChar('log(, 2)')" type="button" class="btn btn-outline-primary">log₂</button>
         </div>
     </div>
     {% if given %}
