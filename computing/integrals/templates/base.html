@@ -20,7 +20,7 @@
     {% block type_select %}
     {% endblock %}
 
-    <div class="row my-5 g-0">
+    <div class="row mb-2 g-0">
         <div class="col-8">
             <form method="post">
                 {% csrf_token %}
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col my-5">
+        <div class="col">
             <button onclick="addChar('sin(')" type="button" class="btn btn-outline-primary">sin</button>
             <button onclick="addChar('cos(')" type="button" class="btn btn-outline-primary">cos</button>
             <button onclick="addChar('tan(')" type="button" class="btn btn-outline-primary">tg</button>
@@ -79,6 +79,8 @@
             <button onclick="addChar('log2(')" type="button" class="btn btn-outline-primary">log₂</button>
             <button onclick="addChar('lg(')" type="button" class="btn btn-outline-primary">lg</button>
             <button onclick="addChar('ln(')" type="button" class="btn btn-outline-primary">ln</button>
+            <button onclick="addChar('()^(1/2)')" type="button" class="btn btn-outline-primary">√</button>
+
         </div>
     </div>
     {% if given %}
