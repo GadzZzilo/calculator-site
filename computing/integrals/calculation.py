@@ -75,7 +75,7 @@ def create_graph(
         low_border: float = -50,
         up_border: float = 50
 ):
-    abscissa_values = np.linspace(low_border, up_border, 100)
+    abscissa_values = np.linspace(low_border, up_border, 400)
     func_1 = sp.sympify(func_1)
     func_2 = sp.sympify(func_2)
     mpl.use("agg")

@@ -5,11 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75786abf-89bb-4cac-82e6-87d25d6975ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/computing/integrals/calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/articles/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/articles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/css/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/ab-pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/blog3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/c3 copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/close1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/footer-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/link2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/m-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/m1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/m2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/m3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/m4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/slide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/t1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/t2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/t3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/t4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/tic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/images/wel-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/classie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/jquery.flexisel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/jquery.wmuSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/modernizr.custom.53451.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/move-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/nivo-lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/integrals/static/js/responsiveslides.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/articles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/definite_integral.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/integrals_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/computing/templates/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/definite_integral.html" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/templates/definite_integral.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computing/integrals/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/static/icons/inf.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/definite_integral.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/templates/indefinite_integral.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computing/integrals/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computing/integrals/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/computing/integrals/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +122,20 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/All_projects/Django/calculator-site",
+    "last_opened_file_path": "D:/All_projects/Django/for_repos",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\All_projects\Django\calculator-site\computing\integrals\static" />
+      <recent name="D:\All_projects\Django\calculator-site\computing\integrals\templates" />
+      <recent name="D:\All_projects\Django\calculator-site\computing\template" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\All_projects\Django\calculator-site\computing" />
+      <recent name="D:\All_projects\Django\calculator-site\computing\integrals\static\integrals" />
+      <recent name="D:\All_projects\Django\calculator-site\computing\integrals" />
       <recent name="D:\All_projects\Django\Django_calculator\calculator" />
     </key>
   </component>

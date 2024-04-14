@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headadd %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>
+            function addChar(char) {
+                document.getElementById("inputField_1").value += char;
+            }
+
+</script>
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row mb-2 g-0">
+        <div class="col-8">
+            <form method="post">
+                {% csrf_token %}
+                <div class="row gx-0 py-1 px-1 align-items-center border">
+                    <div class="col-1">
+                        {% block up_limit %}
+                        {% endblock %}
+                        <div class="row">
+                            <div class="col">
+                                <iconify-icon icon="tabler:math-integral" width="60"></iconify-icon>
+                            </div>
+                        </div>
+                        {% block low_limit %}
+                        {% endblock %}
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group input-group-lg">
+                            <input type="text" name="given" class="form-control" placeholder="Выражение"
+                                   aria-label="Выражение"
+                                   aria-describedby="button-addon2"
+                                   id="inputField_1">
+                        </div>
+                    </div>
+                    <div class="col-2 px-3">
+                        <div class="row">
+                            <div class="col-4 px-0">
+                                <div class="input-group-lg">
+                                    <span class="input-group-text">d</span>
+                                </div>
+                            </div>
+                            <div class="col-8 px-0">
+                                <div class="input-group-lg">
+                                    <select name="var" class="form-select" aria-label="Пример выбора по умолчанию">
+                                        <option selected>x</option>
+                                        <option value="y">y</option>
+                                        <option value="z">z</option>
+                                        <option value="t">t</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="input-group input-group-lg">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2" name="btn1">=
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button onclick="addChar('sin(')" type="button" class="btn btn-outline-primary">sin</button>
+            <button onclick="addChar('cos(')" type="button" class="btn btn-outline-primary">cos</button>
+            <button onclick="addChar('tan(')" type="button" class="btn btn-outline-primary">tg</button>
+            <button onclick="addChar('cot(')" type="button" class="btn btn-outline-primary">ctg</button>
+            <button onclick="addChar('asin(')" type="button" class="btn btn-outline-primary">asin</button>
+            <button onclick="addChar('acos(')" type="button" class="btn btn-outline-primary">acos</button>
+            <button onclick="addChar('atan(')" type="button" class="btn btn-outline-primary">atan</button>
+            <button onclick="addChar('acot(')" type="button" class="btn btn-outline-primary">acot</button>
+            <button onclick="addChar('pi')" type="button" class="btn btn-outline-primary">π</button>
+            <button onclick="addChar('exp(')" type="button" class="btn btn-outline-primary">e</button>
+            <button onclick="addChar('log2(')" type="button" class="btn btn-outline-primary">log₂</button>
+            <button onclick="addChar('lg(')" type="button" class="btn btn-outline-primary">lg</button>
+            <button onclick="addChar('ln(')" type="button" class="btn btn-outline-primary">ln</button>
+            <button onclick="addChar('()^(1/2)')" type="button" class="btn btn-outline-primary">√</button>
+
+        </div>
+    </div>
+    {% if given %}
+    <div class="row">
+        <div class="col my-5">
+            <p class="fs-3 fw-light">Дано:</p>
+            <p class="fs-3">f(x) = {{ given }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col my-5">
+            <p class="fs-3 fw-light">Ответ:</p>
+            <p class="fs-3"><strong>F(x) = {{ result }}</strong></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col my-5">
+            {% if plot %}
+            <p class="fs-3 fw-light">График:</p>
+            <img src="data:image/png;base64,{{ plot }}"/>
+            {% else %}
+            <p class="fs-3 fw-light">Не удалось построить график :(</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

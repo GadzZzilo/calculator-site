@@ -9,10 +9,10 @@ def indefinite_integral(request):
     if request.method == "POST" and request.POST["given"] and "btn1" in request.POST:
         context["given"] = request.POST["given"]
         context["var"] = request.POST["var"]
-        context = calculate_indefinite_integral(context)
+        calculate_indefinite_integral(context)
 
-        return render(request, "indefinite_integral.html", context=context)
-    return render(request, "indefinite_integral.html")
+        return render(request, "integrals_base.html", context=context)
+    return render(request, "integrals_base.html")
 
 
 def definite_integral(request):
@@ -29,4 +29,4 @@ def definite_integral(request):
 
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'index.html')

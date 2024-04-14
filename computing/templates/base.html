@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Gourmet | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' media="all"/>
+    <!-- //bootstrap -->
+    <!-- Custom Theme files -->
+    <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' media="all"/>
+    <script src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <!--start-smoth-scrolling-->
+    <!--webfonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+    <!--webfonts-->
+    <link href="{% static 'css/component.css' %}" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+
+    </script>
+    {% block headadd %}
+    {% endblock %}
+    <!-- start-smoth-scrolling -->
+</head>
+
+<body class="cbp-spmenu-push">
+
+<!--header-->
+<div class="header-section2">
+    <div class="container">
+        <div class="header-top">
+            <div class="top-nav">
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="{% url 'index' %}">Главная</a></li>
+                        <li class="menu">Калькулятор</li>
+                        <ul class="cl-effect-1">
+                            <li><a href="{% url 'indefinite_integral' %}">Неопределенные интегралы</a></li>
+                            <li><a href="{% url 'definite_integral' %}">Определенные интегралы</a></li>
+                            <!--                            <li><a href="menu.html">Menu3</a></li>-->
+                            <!--                            <li><a href="menu.html">Menu4</a></li>-->
+                        </ul>
+                        <!-- script-for-menu -->
+                        <script>
+									   $( "li.menu" ).click(function() {
+										 $( "ul.cl-effect-1" ).slideToggle( 300, function() {
+										 // Animation complete.
+										  });
+										 });
+
+                        </script>
+                        <!--                        <li><a href="articles.html">Events</a></li>-->
+                        <!--                        <li><a href="gallery.html">Gallery</a></li>-->
+                        <!--                        <li><a href="mail.html">Mail Us</a></li>-->
+                    </ul>
+                </nav>
+                <div class="main buttonset">
+                    <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+                    <button id="showRightPush"><img src="{% static 'images/menu.png' %}" alt=""/></button>
+                    <!--<span class="menu"></span>-->
+                </div>
+                <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+                <script src="{% static 'js/classie.js' %}"></script>
+                <script>
+						var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+						showRightPush = document.getElementById( 'showRightPush' ),
+						body = document.body;
+
+						showRightPush.onclick = function() {
+							classie.toggle( this, 'active' );
+							classie.toggle( body, 'cbp-spmenu-push-toleft' );
+							classie.toggle( menuRight, 'cbp-spmenu-open' );
+							disableOther( 'showRightPush' );
+						};
+
+						function disableOther( button ) {
+							if( button !== 'showRightPush' ) {
+								classie.toggle( showRightPush, 'disabled' );
+							}
+						}
+
+                </script>
+            </div>
+            <div class="header-logo">
+                <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""/></a>
+            </div>
+            <div class="search-form">
+                <form>
+                    <input type="text" value="Search..." onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Search...';}" required="">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/keyboard.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+</html>
