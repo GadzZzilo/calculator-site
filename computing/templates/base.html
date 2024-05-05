@@ -51,9 +51,9 @@
                         <ul class="cl-effect-1">
                             <li><a href="{% url 'indefinite_integral' %}">Неопределенные интегралы</a></li>
                             <li><a href="{% url 'definite_integral' %}">Определенные интегралы</a></li>
-                            <!--                            <li><a href="menu.html">Menu3</a></li>-->
                             <!--                            <li><a href="menu.html">Menu4</a></li>-->
                         </ul>
+                        <li><a href="{% url 'articles' %}">Статьи</a></li>
                         <!-- script-for-menu -->
                         <script>
 									   $( "li.menu" ).click(function() {
@@ -97,12 +97,6 @@
             </div>
             <div class="header-logo">
                 <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""/></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" value="Search..." onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Search...';}" required="">
-                </form>
             </div>
             <div class="clearfix"></div>
         </div>
